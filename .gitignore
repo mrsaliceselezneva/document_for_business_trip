@@ -1,0 +1,6 @@
+*.log
+settings.py
+venv/
+.idea/
+*.pdf
+__pycache__/settings.cpython-39.pyc
