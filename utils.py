@@ -1,10 +1,18 @@
-from telegram import ReplyKeyboardMarkup, KeyboardButton
+from telegram import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardButton, InlineKeyboardMarkup
 
 
 def main_keyboard():
     # , KeyboardButton("Магия", request_contact=True)
     return ReplyKeyboardMarkup([["Создать командировочный"]])
 
+
+#def yes_no_button():
+#    inline_kb_full = InlineKeyboardMarkup([[InlineKeyboardButton("Да", text="Yes"),
+#                                            InlineKeyboardButton("Нет", text="No")]])
+#    return inline_kb_full
+
+def yes_no_keyboard():
+    return ReplyKeyboardMarkup([["Да", "Нет"]])
 
 def start(update, contex):
     update.message.reply_text("Привет! Я бот, который помогает генирировать документы. Начнём?",
